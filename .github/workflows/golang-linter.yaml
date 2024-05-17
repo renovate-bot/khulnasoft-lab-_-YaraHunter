@@ -6,8 +6,8 @@ on:
   pull_request:
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
+  pull-requests: read
 
 jobs:
   lint:
@@ -52,4 +52,3 @@ jobs:
         with:
           version: v1.55
           only-new-issues: true
-          run: golangci-lint run --fix --timeout 5m
