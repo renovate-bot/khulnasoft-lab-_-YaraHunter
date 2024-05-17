@@ -29,7 +29,7 @@ func init() {
 	if mgmtConsolePort != "" && mgmtConsolePort != "443" {
 		MgmtConsoleURL += ":" + mgmtConsolePort
 	}
-	DeepfenceKey = os.Getenv("DEEPFENCE_KEY")
+	DeepfenceKey = os.Getenv("KHULNASOFT_KEY")
 }
 
 func IngestMalwareScanResults(malwareScanMsg string, index string) error {

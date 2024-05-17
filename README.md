@@ -93,4 +93,4 @@ The Deepfence YaraHunter project (this repository) is offered under the [Apache2
 
 # Disclaimer
 
-This tool is not meant to be used for hacking. Please use it only for legitimate purposes like detecting indicator of compromise on the infrastructure you own, not on others' infrastructure. DEEPFENCE shall not be liable for loss of profit, loss of business, other financial loss, or any other loss or damage which may be caused, directly or indirectly, by the inadequacy of YaraHunter for any purpose or use thereof or by any defect or deficiency therein.
+This tool is not meant to be used for hacking. Please use it only for legitimate purposes like detecting indicator of compromise on the infrastructure you own, not on others' infrastructure. KHULNASOFT shall not be liable for loss of profit, loss of business, other financial loss, or any other loss or damage which may be caused, directly or indirectly, by the inadequacy of YaraHunter for any purpose or use thereof or by any defect or deficiency therein.
