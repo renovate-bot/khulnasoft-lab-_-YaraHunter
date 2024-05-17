@@ -43,8 +43,8 @@ jobs:
         tag_with_sha: true
         tags: ${{ github.sha }}
 
-    # Run Deepfence YaRadare scans to find indicators of malware in container images.
-    - name: Run Deepfence YaRadare scans 
+    # Run Khulnasoft YaRadare scans to find indicators of malware in container images.
+    - name: Run Khulnasoft YaRadare scans 
       env:
         FULL_IMAGE_NAME: ${{ env.GROUP }}/${{ env.REPO }}:${{ github.sha }}
       run: |

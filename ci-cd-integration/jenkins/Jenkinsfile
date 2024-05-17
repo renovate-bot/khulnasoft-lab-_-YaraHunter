@@ -10,10 +10,10 @@ node {
         app = docker.build("${full_image_name}", "-f ci-cd-integration/jenkins/Dockerfile .")
     }
 
-    stage('Run Deepfence YaRadare'){
-        DeepfenceAgent = docker.image("khulnasoft/khulnasoft-yaradare:latest")
+    stage('Run Khulnasoft YaRadare'){
+        KhulnasoftAgent = docker.image("khulnasoft/khulnasoft-yaradare:latest")
         try {
-            c = DeepfenceAgent.run("--rm --name=khulnasoft-yaradare -v /var/run/docker.sock:/var/run/docker.sock", "--image-name ${full_image_name}")
+            c = KhulnasoftAgent.run("--rm --name=khulnasoft-yaradare -v /var/run/docker.sock:/var/run/docker.sock", "--image-name ${full_image_name}")
             sh "docker logs -f ${c.id}"
             def out = sh script: "docker inspect ${c.id} --format='{{.State.ExitCode}}'", returnStdout: true
             sh "exit ${out}"

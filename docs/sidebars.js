@@ -16,7 +16,7 @@ const sidebars = {
   yarahunter: [
     {
       type: 'html',
-      value: 'Deepfence YaraHunter',
+      value: 'Khulnasoft YaraHunter',
       className: 'sidebar-title',
     },    
 

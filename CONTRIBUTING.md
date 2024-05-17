@@ -39,4 +39,4 @@ If you'd like to discuss the idea before proposing it on GitHub, share it on our
 
 ## I'd like to talk to someone directly
 
-You can reach out to Deepfence's community leads at **community *at* khulnasoft *dot* io**.
+You can reach out to Khulnasoft's community leads at **community *at* khulnasoft *dot* com**.

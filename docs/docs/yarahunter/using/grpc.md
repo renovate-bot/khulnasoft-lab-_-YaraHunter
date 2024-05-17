@@ -27,7 +27,7 @@ docker run -it --rm --name=khulnasoft-malwarescanner \
 	-v $(pwd):/home/khulnasoft/output \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v /tmp/sock:/tmp/sock \
-	quay.io/khulnasoft/khulnasoft_malware_scanner_ce:2.2.0 \
+	ghcr.io/khulnasoft-lab/khulnasoft_malware_scanner_ce:2.2.0 \
 	-socket-path /tmp/sock/s.sock
 ```
 

@@ -17,4 +17,4 @@ yarahunter: vendor $(PWD)/**/*.go $(PWD)/agent-plugins-grpc/**/*.go
 
 .PHONY: docker
 docker:
-	DOCKER_BUILDKIT=1 docker build -t quay.io/khulnasoft/khulnasoft_malware_scanner:2.2.0 .
+	DOCKER_BUILDKIT=1 docker build -t ghcr.io/khulnasoft-lab/khulnasoft_malware_scanner:2.2.0 .

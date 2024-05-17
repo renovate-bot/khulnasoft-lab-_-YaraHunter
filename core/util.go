@@ -85,10 +85,10 @@ func GetTmpDir(imageName, tempDirectory string) (string, error) {
 
 	scanID := "df_" + getSanitizedString(imageName)
 
-	tempPath := filepath.Join(tempDirectory, "Deepfence", constants.TempDirSuffix, scanID)
+	tempPath := filepath.Join(tempDirectory, "Khulnasoft", constants.TempDirSuffix, scanID)
 
 	// if runtime.GOOS == "windows" {
-	//	tempPath = dir + "\temp\Deepfence\IOCScanning\df_" + scanId
+	//	tempPath = dir + "\temp\Khulnasoft\IOCScanning\df_" + scanId
 	//}
 
 	completeTempPath := path.Join(tempPath, constants.ExtractedImageFilesDir)

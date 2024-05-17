@@ -7,7 +7,7 @@
 
 # YaraHunter
 
-Deepfence YaraHunter scans container images, running Docker containers, and filesystems to find indicators of malware. It uses a [YARA ruleset](https://github.com/khulnasoft-lab/yara-rules) to identify resources that match known malware signatures, and may indicate that the container or filesystem has been compromised.
+Khulnasoft YaraHunter scans container images, running Docker containers, and filesystems to find indicators of malware. It uses a [YARA ruleset](https://github.com/khulnasoft-lab/yara-rules) to identify resources that match known malware signatures, and may indicate that the container or filesystem has been compromised.
 
 YaraHunter can be used in the following ways:
 
@@ -37,7 +37,7 @@ Images may be compromised with the installation of a cryptominer such as XMRig. 
 Pull the official **yarahunter** image:
 
 ```
-docker pull quay.io/khulnasoft/khulnasoft_malware_scanner_ce:2.2.0
+docker pull ghcr.io/khulnasoft-lab/khulnasoft_malware_scanner_ce:2.2.0
 ```
 
 or Build it from source clone this repo and run below command
@@ -53,7 +53,7 @@ docker pull metal3d/xmrig
 docker run -i --rm --name=khulnasoft-yarahunter \
      -v /var/run/docker.sock:/var/run/docker.sock \
      -v /tmp:/home/khulnasoft/output \
-     quay.io/khulnasoft/khulnasoft_malware_scanner_ce:2.2.0 \
+     ghcr.io/khulnasoft-lab/khulnasoft_malware_scanner_ce:2.2.0 \
      --image-name metal3d/xmrig:latest \
      --output=json > xmrig-scan.json
 ```
@@ -74,7 +74,7 @@ To get table formatted output omit `--output=json` flag
 Thank you for using YaraHunter.
 
 - [<img src="https://img.shields.io/badge/documentation-read-green">](https://docs.khulnasoft.com/docs/yarahunter/) Start with the documentation
-- [<img src="https://img.shields.io/badge/slack-@khulnasoft-blue.svg?logo=slack">](https://join.slack.com/t/khulnasoft/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ) Got a question, need some help? Find the Deepfence team on Slack
+- [<img src="https://img.shields.io/badge/slack-@khulnasoft-blue.svg?logo=slack">](https://join.slack.com/t/khulnasoft/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ) Got a question, need some help? Find the Khulnasoft team on Slack
 - [![GitHub issues](https://img.shields.io/github/issues/khulnasoft-lab/YaraHunter)](https://github.com/khulnasoft-lab/YaraHunter/issues) Got a feature request or found a bug? Raise an issue
 - [productsecurity _at_ khulnasoft _dot_ io](SECURITY.md): Found a security issue? Share it in confidence
 - Find out more at [khulnasoft.com](https://khulnasoft.com/)
@@ -83,13 +83,13 @@ Thank you for using YaraHunter.
 
 For any security-related issues in the YaraHunter project, contact [productsecurity _at_ khulnasoft _dot_ io](SECURITY.md).
 
-Please file GitHub issues as needed, and join the Deepfence Community [Slack channel](https://join.slack.com/t/khulnasoft/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ).
+Please file GitHub issues as needed, and join the Khulnasoft Community [Slack channel](https://join.slack.com/t/khulnasoft/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ).
 
 ## License
 
-The Deepfence YaraHunter project (this repository) is offered under the [Apache2 license](https://www.apache.org/licenses/LICENSE-2.0).
+The Khulnasoft YaraHunter project (this repository) is offered under the [Apache2 license](https://www.apache.org/licenses/LICENSE-2.0).
 
-[Contributions](CONTRIBUTING.md) to Deepfence YaraHunter project are similarly accepted under the Apache2 license, as per [GitHub's inbound=outbound policy](https://docs.github.com/en/github/site-policy/github-terms-of-service#6-contributions-under-repository-license).
+[Contributions](CONTRIBUTING.md) to Khulnasoft YaraHunter project are similarly accepted under the Apache2 license, as per [GitHub's inbound=outbound policy](https://docs.github.com/en/github/site-policy/github-terms-of-service#6-contributions-under-repository-license).
 
 # Disclaimer
 

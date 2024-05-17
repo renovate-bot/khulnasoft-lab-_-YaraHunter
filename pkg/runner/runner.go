@@ -91,8 +91,8 @@ func runOnce(opts *config.Options, config *config.Config) {
 		return
 	}
 
-	if len(*opts.ConsoleURL) != 0 && len(*opts.DeepfenceKey) != 0 {
-		pub, err := output.NewPublisher(*opts.ConsoleURL, strconv.Itoa(*opts.ConsolePort), *opts.DeepfenceKey)
+	if len(*opts.ConsoleURL) != 0 && len(*opts.KhulnasoftKey) != 0 {
+		pub, err := output.NewPublisher(*opts.ConsoleURL, strconv.Itoa(*opts.ConsolePort), *opts.KhulnasoftKey)
 		if err != nil {
 			log.Error(err.Error())
 		}

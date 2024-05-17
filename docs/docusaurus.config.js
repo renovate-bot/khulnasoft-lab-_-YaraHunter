@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Deepfence YaraHunter',
+  title: 'Khulnasoft YaraHunter',
   tagline: 'Malware scanner for cloud-native, as part of CI/CD and at Runtime',
   url: 'https://yarahunter.local',
   baseUrl: '/',
@@ -54,7 +54,7 @@ const config = {
         hideOnScroll: false,
         title: '',
         logo: {
-          alt: 'Deepfence',
+          alt: 'Khulnasoft',
           src: '/img/khulnasoft-logo-black.svg',
           srcDark: '/img/khulnasoft-logo-white.svg',
         },
@@ -79,12 +79,12 @@ const config = {
       footer: {
         style: 'dark',
         logo: {
-          alt: 'Deepfence, Inc',
+          alt: 'Khulnasoft, Inc',
           src: '/img/khulnasoft-logo-white.svg',
           width: 160,
           height: 51,
         },
-        copyright: `Copyright © ${new Date().getFullYear()} Deepfence, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Khulnasoft, Inc. Built with Docusaurus.`,
       },
       colorMode: {
         defaultMode: 'light',

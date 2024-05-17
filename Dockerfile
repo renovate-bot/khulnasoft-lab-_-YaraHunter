@@ -59,7 +59,7 @@ RUN make clean \
 
 
 FROM debian:bookworm
-LABEL MAINTAINER="Deepfence"
+LABEL MAINTAINER="Khulnasoft"
 LABEL khulnasoft.role=system
 
 COPY --from=skopeo-builder /usr/bin/skopeo /usr/bin/skopeo
@@ -95,7 +95,7 @@ EOF
 RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y libgpgme-dev libdevmapper-dev
 
 WORKDIR /home/khulnasoft/usr
-COPY --from=builder /home/khulnasoft-lab/yara-rules .
+COPY --from=builder /home/khulnasoft/yara-rules .
 COPY --from=builder /usr/local/yara.tar.gz /usr/local/yara.tar.gz
 COPY --from=builder /home/khulnasoft/src/YaraHunter/YaraHunter .
 COPY --from=builder /home/khulnasoft/src/YaraHunter/config.yaml .
