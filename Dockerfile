@@ -50,7 +50,7 @@ RUN cd /root && wget https://github.com/VirusTotal/yara/archive/refs/tags/v4.3.2
     && cd /usr/local/ \
     && tar -czf yara.tar.gz yara
 
-WORKDIR /home/khulnasoft/src/YaraHunter
+WORKDIR /home/khulnasoft-lab/src/YaraHunter
 COPY . .
 RUN make clean \
     && make all \
@@ -94,15 +94,15 @@ EOF
 
 RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y libgpgme-dev libdevmapper-dev
 
-WORKDIR /home/khulnasoft/usr
-COPY --from=builder /home/khulnasoft/yara-rules .
+WORKDIR /home/khulnasoft-lab/usr
+COPY --from=builder /home/khulnasoft-lab/yara-rules .
 COPY --from=builder /usr/local/yara.tar.gz /usr/local/yara.tar.gz
-COPY --from=builder /home/khulnasoft/src/YaraHunter/YaraHunter .
-COPY --from=builder /home/khulnasoft/src/YaraHunter/config.yaml .
+COPY --from=builder /home/khulnasoft-lab/src/YaraHunter/YaraHunter .
+COPY --from=builder /home/khulnasoft-lab/src/YaraHunter/config.yaml .
 
 RUN cd /usr/local/ \
     && tar -xzf yara.tar.gz
-WORKDIR /home/khulnasoft/output
+WORKDIR /home/khulnasoft-lab/output
 
-ENTRYPOINT ["/home/khulnasoft/usr/YaraHunter", "-config-path", "/home/khulnasoft/usr", "-rules-path", "/home/khulnasoft/usr"]
+ENTRYPOINT ["/home/khulnasoft-lab/usr/YaraHunter", "-config-path", "/home/khulnasoft-lab/usr", "-rules-path", "/home/khulnasoft-lab/usr"]
 CMD ["-h"]

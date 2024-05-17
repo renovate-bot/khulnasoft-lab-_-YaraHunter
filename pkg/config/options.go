@@ -41,7 +41,7 @@ type Options struct {
 
 func ParseOptions() (*Options, error) {
 	options := &Options{
-		RulesPath:            flag.String("rules-path", "/home/khulnasoft/usr", "All .yar and .yara files in the given directory will be compiled"),
+		RulesPath:            flag.String("rules-path", "/home/khulnasoft-lab/usr", "All .yar and .yara files in the given directory will be compiled"),
 		FailOnCompileWarning: flag.Bool("fail-on-rule-compile-warn", false, "Fail if yara rule compilation has warnings"),
 		Threads:              flag.Int("threads", 0, "Number of concurrent threads (default number of logical CPUs)"),
 		DebugLevel:           flag.String("debug-level", "ERROR", "Debug levels are one of FATAL, ERROR, IMPORTANT, WARN, INFO, DEBUG. Only levels higher than the debug-level are displayed"),
@@ -74,7 +74,7 @@ func ParseOptions() (*Options, error) {
 
 // NewDefaultOptions returns the default options for the YaraHunter without flag parsing
 func NewDefaultOptions() *Options {
-	var rulePath = "/home/khulnasoft/usr"
+	var rulePath = "/home/khulnasoft-lab/usr"
 	var failOnCompileWarning = false
 	var threads = 0
 	var debugLevel = "ERROR"

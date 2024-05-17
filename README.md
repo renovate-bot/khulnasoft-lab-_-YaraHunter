@@ -52,7 +52,7 @@ docker pull metal3d/xmrig
 
 docker run -i --rm --name=khulnasoft-yarahunter \
      -v /var/run/docker.sock:/var/run/docker.sock \
-     -v /tmp:/home/khulnasoft/output \
+     -v /tmp:/home/khulnasoft-lab/output \
      ghcr.io/khulnasoft-lab/khulnasoft_malware_scanner_ce:2.2.0 \
      --image-name metal3d/xmrig:latest \
      --output=json > xmrig-scan.json

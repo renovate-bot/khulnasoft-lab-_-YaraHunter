@@ -5,9 +5,9 @@ title: Configure Rules
 
 # Provide Custom Rules
 
-YaraHunter uses the YARA rules files (`*.yar` and `*.yara`) in the `/home/khulnasoft/rules` directory in the container.  You can provide an alternative set of rules, either at build-time, or by mounting a new rules directory into the container.
+YaraHunter uses the YARA rules files (`*.yar` and `*.yara`) in the `/home/khulnasoft-lab/rules` directory in the container.  You can provide an alternative set of rules, either at build-time, or by mounting a new rules directory into the container.
 
-You can mount the rules directory over the existing one (using `-v $(pwd)/my-rules:/home/khulnasoft/rules`). Alternatively, you can mount the rules directory in a different location and specify it with `--rules-path`:
+You can mount the rules directory over the existing one (using `-v $(pwd)/my-rules:/home/khulnasoft-lab/rules`). Alternatively, you can mount the rules directory in a different location and specify it with `--rules-path`:
 
 ```bash
 # Put your rules files (*.yar, *.yara) in the ./my-rules directory

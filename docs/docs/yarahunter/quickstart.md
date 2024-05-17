@@ -34,7 +34,7 @@ You can summarise the results by processing the JSON output, e.g. using `jq`:
 ```bash
 docker run -i --rm --name=yara-hunter \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    -v /tmp:/home/khulnasoft/output \
+    -v /tmp:/home/khulnasoft-lab/output \
     ghcr.io/khulnasoft-lab/khulnasoft_malware_scanner_ce:2.2.0 \
     --image-name node:latest \
     --output=json > node-latest.json
