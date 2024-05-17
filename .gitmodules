@@ -1,3 +1,0 @@
-[submodule "agent-plugins-grpc"]
-	path = agent-plugins-grpc
-	url = https://github.com/khulnasoft-lab/agent-plugins-grpc

@@ -5,10 +5,6 @@ go 1.21
 replace github.com/khulnasoft-lab/agent-plugins-grpc => ./agent-plugins-grpc
 
 require (
-	github.com/khulnasoft-lab/agent-plugins-grpc v0.0.0-00010101000000-000000000000
-	github.com/khulnasoft-lab/golang_sdk/client v0.0.0-20230630084500-8fb0280d6010
-	github.com/khulnasoft-lab/golang_sdk/utils v0.0.0-20230929125743-1713a043efe5
-	github.com/khulnasoft-lab/vessel v0.12.3
 	github.com/gabriel-vasile/mimetype v1.4.3
 	github.com/hillu/go-yara/v4 v4.3.2
 	github.com/olekukonko/tablewriter v0.0.5
