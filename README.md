@@ -76,12 +76,12 @@ Thank you for using YaraHunter.
 - [<img src="https://img.shields.io/badge/documentation-read-green">](https://docs.khulnasoft.com/docs/yarahunter/) Start with the documentation
 - [<img src="https://img.shields.io/badge/slack-@khulnasoft-blue.svg?logo=slack">](https://join.slack.com/t/khulnasoft/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ) Got a question, need some help? Find the Khulnasoft team on Slack
 - [![GitHub issues](https://img.shields.io/github/issues/khulnasoft-lab/YaraHunter)](https://github.com/khulnasoft-lab/YaraHunter/issues) Got a feature request or found a bug? Raise an issue
-- [productsecurity _at_ khulnasoft _dot_ io](SECURITY.md): Found a security issue? Share it in confidence
+- [productsecurity _at_ khulnasoft _dot_ com](SECURITY.md): Found a security issue? Share it in confidence
 - Find out more at [khulnasoft.com](https://khulnasoft.com/)
 
 ## Security and Support
 
-For any security-related issues in the YaraHunter project, contact [productsecurity _at_ khulnasoft _dot_ io](SECURITY.md).
+For any security-related issues in the YaraHunter project, contact [productsecurity _at_ khulnasoft _dot_ com](SECURITY.md).
 
 Please file GitHub issues as needed, and join the Khulnasoft Community [Slack channel](https://join.slack.com/t/khulnasoft/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ).
 
