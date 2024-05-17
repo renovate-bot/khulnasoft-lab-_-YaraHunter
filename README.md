@@ -22,7 +22,7 @@ Key capabilities:
 - Run anywhere: highly-portable, docker container form factor
 - Designed for automation: easy-to-deploy, easy-to-parse JSON output
 
-YaraHunter is a work-in-progress (check the [Roadmap](https://github.com/khulnasoft-lab/YaraHunter/projects) and [issues list](issues)), and will be integrated into the [ThreatMapper](https://github.com/khulnasoft/ThreatMapper) threat discovery platform. We welcome any contributions to help to improve this tool.
+YaraHunter is a work-in-progress (check the [Roadmap](https://github.com/khulnasoft-lab/YaraHunter/projects) and [issues list](issues)), and will be integrated into the [Kengine](https://github.com/khulnasoft/Kengine) threat discovery platform. We welcome any contributions to help to improve this tool.
 
 ## Quick Start
 
