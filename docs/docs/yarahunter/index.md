@@ -4,7 +4,7 @@ title: Introduction to YaraHunter
 
 # YaraHunter
 
-Khulnasoft YaraHunter scans container images, running Docker containers, and filesystems to find indicators of malware. It uses a [YARA ruleset](https://github.com/khulnasoft-lab/yara-rules) to identify resources that match known malware signatures, and may indicate that the container or filesystem has been compromised.
+Deepfence YaraHunter scans container images, running Docker containers, and filesystems to find indicators of malware. It uses a [YARA ruleset](https://github.com/deepfence/yara-rules) to identify resources that match known malware signatures, and may indicate that the container or filesystem has been compromised.
 
 
 Key capabilities:
@@ -26,9 +26,9 @@ Images may be compromised with the installation of a cryptominer such as XMRig. 
 ```bash
 docker pull metal3d/xmrig
 
-docker run -i --rm --name=khulnasoft-yarahunter \
+docker run -i --rm --name=deepfence-yarahunter \
      -v /var/run/docker.sock:/var/run/docker.sock \
-     -v /tmp:/home/khulnasoft-lab/output \
+     -v /tmp:/home/deepfence/output \
      ghcr.io/khulnasoft-lab/khulnasoft_malware_scanner_ce:2.2.0 \
      --image-name metal3d/xmrig:latest \
      --output=json > xmrig-scan.json

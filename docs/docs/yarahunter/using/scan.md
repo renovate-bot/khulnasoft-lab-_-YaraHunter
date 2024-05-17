@@ -25,16 +25,16 @@ docker rmi node:latest
 
 ### Scan a Running Container
 
-Mount the root directory into the YaraHunter container at a location of your choosing (e.g. `/khulnasoft/mnt`) and specify the running container ID:
+Mount the root directory into the YaraHunter container at a location of your choosing (e.g. `/deepfence/mnt`) and specify the running container ID:
 
 ```bash
 docker run -it --rm --name=yara-hunter \
     -v /var/run/docker.sock:/var/run/docker.sock \
 # highlight-next-line
-    -v /:/khulnasoft/mnt \
+    -v /:/deepfence/mnt \
     ghcr.io/khulnasoft-lab/khulnasoft_malware_scanner_ce:2.2.0 \
 # highlight-next-line
-    --host-mount-path /khulnasoft/mnt --container-id 69221b948a73
+    --host-mount-path /deepfence/mnt --container-id 69221b948a73
 ```
 
 ### Scan a filesystem

@@ -30,7 +30,7 @@ type Options struct {
 	OutFormat            *string
 	ConsoleURL           *string
 	ConsolePort          *int
-	KhulnasoftKey        *string
+	DeepfenceKey         *string
 	FailOnCount          *int
 	FailOnHighCount      *int
 	FailOnMediumCount    *int
@@ -41,7 +41,7 @@ type Options struct {
 
 func ParseOptions() (*Options, error) {
 	options := &Options{
-		RulesPath:            flag.String("rules-path", "/home/khulnasoft-lab/usr", "All .yar and .yara files in the given directory will be compiled"),
+		RulesPath:            flag.String("rules-path", "/home/deepfence/usr", "All .yar and .yara files in the given directory will be compiled"),
 		FailOnCompileWarning: flag.Bool("fail-on-rule-compile-warn", false, "Fail if yara rule compilation has warnings"),
 		Threads:              flag.Int("threads", 0, "Number of concurrent threads (default number of logical CPUs)"),
 		DebugLevel:           flag.String("debug-level", "ERROR", "Debug levels are one of FATAL, ERROR, IMPORTANT, WARN, INFO, DEBUG. Only levels higher than the debug-level are displayed"),
@@ -58,14 +58,14 @@ func ParseOptions() (*Options, error) {
 		WorkersPerScan:       flag.Int("workers-per-scan", 1, "Number of concurrent workers per scan"),
 		InactiveThreshold:    flag.Int("inactive-threshold", 600, "Threshold for Inactive scan in seconds"),
 		OutFormat:            flag.String("output", TableOutput, "Output format: json or table"),
-		ConsoleURL:           flag.String("console-url", "", "Khulnasoft Management Console URL"),
-		ConsolePort:          flag.Int("console-port", 443, "Khulnasoft Management Console Port"),
-		KhulnasoftKey:        flag.String("khulnasoft-key", "", "Khulnasoft key for auth"),
+		ConsoleURL:           flag.String("console-url", "", "Deepfence Management Console URL"),
+		ConsolePort:          flag.Int("console-port", 443, "Deepfence Management Console Port"),
+		DeepfenceKey:         flag.String("deepfence-key", "", "Deepfence key for auth"),
 		FailOnCount:          flag.Int("fail-on-count", -1, "Exit with status 1 if number of malwares found is >= this value (Default: -1)"),
 		FailOnHighCount:      flag.Int("fail-on-high-count", -1, "Exit with status 1 if number of high malwares found is >= this value (Default: -1)"),
 		FailOnMediumCount:    flag.Int("fail-on-medium-count", -1, "Exit with status 1 if number of medium malwares found is >= this value (Default: -1)"),
 		FailOnLowCount:       flag.Int("fail-on-low-count", -1, "Exit with status 1 if number of low malwares found is >= this value (Default: -1)"),
-		RulesListingURL:      flag.String("rules-listing-url", "https://threat-intel.khulnasoft.com/yara-rules/listing.json", "Khulnasoft threat intel yara rules listing (Default: threat-intel.khulnasoft.com/yara-rules/listing.json)"),
+		RulesListingURL:      flag.String("rules-listing-url", "https://threat-intel.deepfence.io/yara-rules/listing.json", "Deepfence threat intel yara rules listing (Default: threat-intel.deepfence.io/yara-rules/listing.json)"),
 		EnableUpdater:        flag.Bool("enable-updater", true, "Enable rules updater (Default: true)"),
 	}
 	flag.Parse()
@@ -74,7 +74,7 @@ func ParseOptions() (*Options, error) {
 
 // NewDefaultOptions returns the default options for the YaraHunter without flag parsing
 func NewDefaultOptions() *Options {
-	var rulePath = "/home/khulnasoft-lab/usr"
+	var rulePath = "/home/deepfence/usr"
 	var failOnCompileWarning = false
 	var threads = 0
 	var debugLevel = "ERROR"

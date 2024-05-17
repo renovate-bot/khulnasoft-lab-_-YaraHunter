@@ -115,7 +115,7 @@ func Untar(d *os.File, r io.Reader) error {
 }
 
 func GetDfInstallDir() string {
-	installDir, exists := os.LookupEnv("KE_INSTALL_DIR")
+	installDir, exists := os.LookupEnv("DF_INSTALL_DIR")
 	if exists {
 		return installDir
 	} else {

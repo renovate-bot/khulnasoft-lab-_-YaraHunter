@@ -4,8 +4,8 @@
       {
         "built": "2022-09-23T00:30:13.10358216Z",
         "version": 3,
-        "url": "https://codeload.github.com/khulnasoft-lab/yara-rules/tar.gz/refs/tags/v0.1.0",
-        "checksum": "68b13bb92e6a626cc7ad0fb9156259448c7450ce"
+        "url": "https://threat-intel.deepfence.io/yara-rules/releases/download/threatintel-yara-2024-05-17_00-49-35/threatintel-yara-rules-2024-05-17_00-49-35.tar.gz",
+        "checksum": "6e1f9508b2c77868fb264c905de4cef422c6a30529c97dc96de8caf258be5754"
       }
     ],
     "5": null

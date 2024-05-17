@@ -20,7 +20,7 @@ import (
 
 var (
 	MgmtConsoleURL string
-	KhulnasoftKey  string
+	DeepfenceKey   string
 )
 
 func init() {
@@ -29,7 +29,7 @@ func init() {
 	if mgmtConsolePort != "" && mgmtConsolePort != "443" {
 		MgmtConsoleURL += ":" + mgmtConsolePort
 	}
-	KhulnasoftKey = os.Getenv("KHULNASOFT_KEY")
+	DeepfenceKey = os.Getenv("DEEPFENCE_KEY")
 }
 
 func IngestMalwareScanResults(malwareScanMsg string, index string) error {
@@ -47,7 +47,7 @@ func IngestMalwareScanResults(malwareScanMsg string, index string) error {
 			return err
 		}
 		httpReq.Close = true
-		httpReq.Header.Add("khulnasoft-key", KhulnasoftKey)
+		httpReq.Header.Add("deepfence-key", DeepfenceKey)
 		resp, err := httpClient.Do(httpReq)
 		if err != nil {
 			return err

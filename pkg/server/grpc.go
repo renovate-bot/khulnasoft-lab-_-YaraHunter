@@ -32,7 +32,7 @@ var (
 )
 
 func init() {
-	if os.Getenv("KE_SERVERLESS") == "true" {
+	if os.Getenv("DF_SERVERLESS") == "true" {
 		MalwareScanDir = "/"
 	} else {
 		MalwareScanDir = HostMountDir

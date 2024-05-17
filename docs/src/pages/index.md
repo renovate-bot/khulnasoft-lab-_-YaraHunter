@@ -15,7 +15,7 @@ export function siteMetadata() {
 
 <span>
 	<a href={siteConfig().themeConfig.navbar.items[0].docId.replace('/index', '')}>
-		<div class="khulnasoft-button">
+		<div class="deepfence-button">
 			{siteConfig().themeConfig.navbar.items[0].label}
 		</div>
 	</a>
@@ -25,7 +25,7 @@ export function siteMetadata() {
 
 <span>
 	<a href={siteConfig().presets[0][1].docs.editUrl}>
-		<div class="khulnasoft-button">
+		<div class="deepfence-button">
 			Edit on GitHub
 		</div>
 	</a>
