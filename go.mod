@@ -7,7 +7,7 @@ replace github.com/khulnasoft-lab/agent-plugins-grpc => ./agent-plugins-grpc
 require (
 	github.com/gabriel-vasile/mimetype v1.4.3
 	github.com/hillu/go-yara/v4 v4.3.2
-	github.com/khulnasoft-lab/agent-plugins-grpc v0.0.0-00010101000000-000000000000
+	github.com/khulnasoft-lab/agent-plugins-grpc v0.0.0-20240517030241-8d86ad59d455
 	github.com/khulnasoft-lab/golang_sdk/client v0.0.0-20240517042822-c98d5dfb7872
 	github.com/khulnasoft-lab/golang_sdk/utils v0.0.0-20240517042822-c98d5dfb7872
 	github.com/khulnasoft-lab/vessel v0.1.1
